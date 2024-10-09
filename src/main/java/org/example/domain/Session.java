@@ -7,23 +7,16 @@ package org.example.domain;
 public class Session
 {
     private final String sessionType; // "Work", "Short Break", "Long Break"
-
+    private final int totalTime;
     private  int timeLeftInSeconds;
     private  boolean isComplete;
 
     public Session(int minutes, String sessionType)
     {
+        this.totalTime = minutes * 60;
         this.timeLeftInSeconds = minutes * 60;
         this.sessionType = sessionType;
         this.isComplete = false;
-    }
-
-    /****
-     * Method to start counting in the timer
-     */
-    public void startSession()
-    {
-        //ToDo: start the session
     }
 
     /****
@@ -57,4 +50,8 @@ public class Session
     }
 
 
+    public void reset()
+    {
+        this.timeLeftInSeconds = this.totalTime;
+    }
 }
