@@ -2,6 +2,9 @@ package org.example.ui;
 
 import javax.swing.*;
 
+/****
+ * This class represents the User interface and will be in charge of handling the user interactions.
+ */
 public class UserInterface
 {
     private JPanel TimerPanel;
