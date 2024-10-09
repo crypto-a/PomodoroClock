@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ui;
 
 import javax.swing.*;
 
@@ -10,4 +10,9 @@ public class UserInterface
     private JButton workTimeStartButton;
     private JLabel shortBreakTimeDisplay;
     private JButton shortBreakStartButton;
+    private JPanel workSessionPanel;
+    private JPanel shortBreakPanel;
+    private JPanel longBreakPanel;
+    private JLabel longBreakTimeDisplay;
+    private JButton longBreakStartButton;
 }
